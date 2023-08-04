@@ -1,0 +1,225 @@
+:root {
+  --grey: #f2f1f6;
+  --pink: #fb4374;
+  --white: #ffffff;
+  --titleClr: #21435d;
+  --pragraphClr: #c0c5c8;
+  --shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Header/Blog Title */
+.header {
+  margin-top: 100px;
+  padding: 60px;
+  border-radius: 25px;
+  font-size: 40px;
+  text-align: center;
+  background: var(--pink);
+  color: var(--white);
+}
+.header h2 {
+  box-shadow: var(--white) 0px 5px 15px;
+}
+/* Header/Blog SearchForm */
+
+.blg-sidebar-srch .search {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: -25px;
+}
+.blg-sidebar-srch .searchTerm {
+  width: 40%;
+  border: 3px solid var(--titleClr);
+  border-right: none;
+  padding: 5px;
+  border-radius: 25px;
+  color: #9dbfaf;
+  background: #fff;
+  color: #a3a3a3;
+  font: inherit;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  border: 0;
+  outline: 0;
+  padding: 22px 18px;
+}
+.blg-sidebar-srch .searchTerm:focus {
+  color: var(--bluegray);
+}
+.blg-sidebar-srch .searchButton {
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  font-size: 20px;
+  background: #fff;
+  color: #a3a3a3;
+  border: 0;
+  outline: 0;
+  padding: 22px 18px;
+  margin-left: -50px;
+}
+.blg-sidebar-srch .searchButton:hover {
+  background-color: var(--pink);
+}
+
+/* Blog Content and Sidebar */
+.blogSec {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 30px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.sideBar {
+  padding: 25px;
+  border-radius: 25px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.blogBox {
+  border: 1px solid antiquewhite;
+  border-radius: 7px;
+}
+.blogBox:hover {
+  box-shadow: var(--shadow);
+}
+.boxInfo {
+  padding: 20px;
+}
+.blogBox img {
+  width: 100%;
+  height: 300px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.boxInfo h2 {
+  font-weight: 500;
+  font-size: 25px;
+  margin-top: 10px;
+  color: var(--pink);
+  color: var(--gray);
+}
+.boxInfo h3 {
+  font-weight: 500;
+  font-size: 25px;
+  margin: 25px 0;
+}
+.boxInfo h4 {
+  font-size: 18px;
+  margin-top: 15px;
+}
+.boxInfo h4 a {
+  color: var(--pink);
+}
+.boxInfo h3 a {
+  color: var(--titleClr);
+}
+.excerpt {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-top: 10px;
+  color: #343a40;
+}
+
+/* mobile breakpoint */
+@media screen and (max-width: 992px) {
+  .blogSec {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Start SideBar */
+
+/* sideBar Category */
+
+.talk {
+  margin-top: 60px;
+}
+.categories h2,
+.talk h2 {
+  color: var(--titleClr);
+}
+.sideBarCategory {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--pink);
+}
+.sideBarCategory a {
+  color: var(--titleClr);
+  margin-bottom: 10px;
+}
+
+/* sideBar Talk */
+.talk p {
+  color: #343a40;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 2rem;
+}
+
+.social-media {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  justify-content: center;
+  background: #e3edf7;
+  padding: 20px;
+}
+.talkIcon {
+  display: flex;
+  background: #e3edf7;
+  height: 50px;
+  width: 50px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0);
+  transition: transform 0.5s;
+}
+.talkIcon i {
+  font-size: 20px;
+  color: #777777;
+  transition: transform 0.5s;
+}
+.talkIcon:hover {
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.01);
+
+  transform: translateY(2px);
+}
+.talkIcon:hover i {
+  transform: scale(0.9);
+}
+.talkIcon:hover .fa-facebook {
+  color: #3b5998;
+}
+.talkIcon:hover .fa-twitter {
+  color: #00acee;
+}
+.talkIcon:hover .fa-instagram {
+  color: #f14843;
+}
+.talkIcon:hover .fa-youtube {
+  color: #ff0000;
+}
+/* END SideBar */

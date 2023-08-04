@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SuperSalad</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/saladFavicon.png" />
+
+    <!-- Blog Style -->
+    <link rel="stylesheet" href="contact.css" />
+
+    <!-- Home Page Style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font-Awsome -->
+    <!-- <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        /> -->
+
+    <!-- Font-Awsome -->
+    <script
+      src="https://kit.fontawesome.com/0360d28893.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- START Header Section -->
+    <header class="header-area">
+      <!-- START navbar -->
+      <div class="navbar-area">
+        <div class="container">
+          <nav class="site-navbar">
+            <!-- Logo -->
+            <!-- <a href="#home" class="site-logo">logo</a> -->
+            <a href="#home" class="site-logo"><span>Super</span>Salad</a>
+
+            <!-- Menu -->
+            <ul>
+              <li><a href="index.html">home</a></li>
+              <li><a href="myBlog.html">Blog</a></li>
+              <li><a href="about.html">about</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="contact.html">contact</a></li>
+            </ul>
+
+            <!-- nav-toggler for mobile version only -->
+            <button class="nav-toggler">
+              <span></span>
+            </button>
+          </nav>
+        </div>
+      </div>
+      <!-- END navbar -->
+    </header>
+    <!-- END Header Section -->
+
+    <section class="container">
+      <div class="contactSec">
+        <div class="form-main">
+          <div class="main-wrapper">
+            <h2 class="form-head">We'd love to hear from you</h2>
+            <form class="form-wrapper">
+              <div class="form-card">
+                <input
+                  class="form-input"
+                  type="text"
+                  name="full_name"
+                  required="required"
+                />
+                <label class="form-label" for="full_name">Full Name</label>
+              </div>
+
+              <div class="form-card">
+                <input
+                  class="form-input"
+                  type="email"
+                  name="email"
+                  required="required"
+                />
+                <label class="form-label" for="email">Email</label>
+              </div>
+
+              <div class="form-card">
+                <input
+                  class="form-input"
+                  type="number"
+                  name="phone_number"
+                  required="required"
+                />
+                <label class="form-label" for="phone_number"
+                  >Phone number (optional)</label
+                >
+              </div>
+
+              <div class="form-card">
+                <textarea
+                  class="form-textarea"
+                  maxlength="420"
+                  rows="3"
+                  name="phone_number"
+                  required="required"
+                ></textarea>
+                <label class="form-textarea-label" for="phone_number"
+                  >Message...</label
+                >
+              </div>
+              <div class="btn-wrap">
+                <button class="btn">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SATRT Fouter -->
+    <section
+      class="footerSec"
+      style="background-image: url('images/footerbg1.png')"
+    >
+      <div class="container">
+        <div class="footer">
+          <div class="footerCard">
+            <h3>About Us</h3>
+            <ul>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Faq</a></li>
+              <li><a href="#">New & Events</a></li>
+            </ul>
+          </div>
+
+          <div class="footerCard">
+            <h3>Helpful Links</h3>
+            <ul>
+              <li><a href="#">Terms Of Use </a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">account details</a></li>
+            </ul>
+          </div>
+
+          <div class="footerCard">
+            <h3>Doing Business</h3>
+            <ul>
+              <li><a href="#">Be a Supplier</a></li>
+              <li><a href="#">Be a Partner</a></li>
+              <li><a href="#">Franchise</a></li>
+              <li><a href="#">Invest With Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footerCard">
+            <h3>Connect With Us</h3>
+            <ul>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Linkdein</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Fouter -->
+
+    <!-- START CopyWrite -->
+    <section class="copyFooter">
+      <div class="container">
+        <div class="copyWrite">
+          <div>
+            <a href="#home" class="site-logo"><span>Super</span>Salad</a>
+          </div>
+          <p id="ccright"></p>
+          <div>
+            <script>
+              document.getElementById("ccright").innerHTML =
+                "Copyright &copy; " +
+                new Date().getFullYear() +
+                " - All Rights Reserved";
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END CopyWrite -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

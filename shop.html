@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SuperSalad</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/saladFavicon.png" />
+
+    <!-- Blog Style -->
+    <link rel="stylesheet" href="shop.css" />
+
+    <!-- Home Page Style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font-Awsome -->
+    <!-- <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        /> -->
+
+    <!-- Font-Awsome -->
+    <script
+      src="https://kit.fontawesome.com/0360d28893.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- START Header Section -->
+    <header class="header-area">
+      <!-- START navbar -->
+      <div class="navbar-area">
+        <div class="container">
+          <nav class="site-navbar">
+            <!-- Logo -->
+            <!-- <a href="#home" class="site-logo">logo</a> -->
+            <a href="#home" class="site-logo"><span>Super</span>Salad</a>
+
+            <!-- Menu -->
+            <ul>
+              <li><a href="index.html">home</a></li>
+              <li><a href="myBlog.html">Blog</a></li>
+              <li><a href="about.html">about</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="contact.html">contact</a></li>
+            </ul>
+
+            <!-- nav-toggler for mobile version only -->
+            <button class="nav-toggler">
+              <span></span>
+            </button>
+          </nav>
+        </div>
+      </div>
+      <!-- END navbar -->
+    </header>
+    <!-- END Header Section -->
+
+    <!-- START shop -->
+    <div class="shopHero">
+      <img class="img1" src="images/salad-3.png" alt="" />
+      <div class="shopTitlHero">
+        <h2>Shop</h2>
+        <p>What do you want to have today?</p>
+      </div>
+      <img class="img2" src="images/salad-2.png" alt="" />
+    </div>
+    <section class="container">
+      <div class="shopSec">
+        <div class="proAndSide">
+          <div class="proSideBar">
+            <!-- Search form -->
+            <div class="blg-sidebar-srch">
+              <div class="search">
+                <input type="text" class="searchTerm" placeholder="Search" />
+                <button type="submit" class="searchButton">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </div>
+            <div class="shopCat">
+              <!-- categories Sidebar -->
+              <div class="categories">
+                <h2>Categories</h2>
+                <div class="sideBarCategory">
+                  <a href="#">Tossed salad</a>
+                  <span>129</span>
+                </div>
+                <div class="sideBarCategory">
+                  <a href="#">Bound salad</a>
+                  <span>78</span>
+                </div>
+                <div class="sideBarCategory">
+                  <a href="#">Tossed salad</a>
+                  <span>129</span>
+                </div>
+                <div class="sideBarCategory">
+                  <a href="#">Fruit salad</a>
+                  <span>12</span>
+                </div>
+                <div class="sideBarCategory">
+                  <a href="#">Noodle salad</a>
+                  <span>89</span>
+                </div>
+                <div class="sideBarCategory">
+                  <a href="#">Pasta salad</a>
+                  <span>30</span>
+                </div>
+              </div>
+              <!-- START Filter by Price -->
+              <div class="sidebar-price">
+                <h5>Price</h5>
+                <div class="slidecontainer">
+                  <p class="paraprice">$<span id="price"></span></p>
+                  <input
+                    type="range"
+                    min="100"
+                    max="3000"
+                    value="50"
+                    class="prSlider"
+                    id="myRange"
+                  />
+                  <div class="freeshipping">
+                    <span>Free Shipping</span>
+                    <div>
+                      <input type="checkbox" class="input-box" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END Filter by Price -->
+            </div>
+          </div>
+          <div class="proSec">
+            <div class="proBox">
+              <div class="product-card">
+                <div class="product-tumb">
+                  <a href="singleProduct.html" target="_blank"
+                    ><img src="images/salad10.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="product-details">
+                  <span class="product-catagory">Women,bag</span>
+                  <h4>
+                    <a href="singleProduct.html" target="_blank"
+                      >Women leather bag</a
+                    >
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Vero, possimus nostrum!
+                  </p>
+                  <div class="product-bottom-details">
+                    <div class="product-price">$230.99</div>
+                    <div class="product-links">
+                      <a href=""><i class="fa fa-heart"></i></a>
+                      <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="proBox">
+              <div class="product-card">
+                <div class="product-tumb">
+                  <a href="singleProduct.html" target="_blank"
+                    ><img src="images/salad1.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="product-details">
+                  <span class="product-catagory">Women,bag</span>
+                  <h4>
+                    <a href="singleProduct.html" target="_blank"
+                      >Women leather bag</a
+                    >
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Vero, possimus nostrum!
+                  </p>
+                  <div class="product-bottom-details">
+                    <div class="product-price">$230.99</div>
+                    <div class="product-links">
+                      <a href=""><i class="fa fa-heart"></i></a>
+                      <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="proBox">
+              <div class="product-card">
+                <div class="product-tumb">
+                  <a href="singleProduct.html" target="_blank"
+                    ><img src="images/salad12.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="product-details">
+                  <span class="product-catagory">Women,bag</span>
+                  <h4>
+                    <a href="singleProduct.html" target="_blank"
+                      >Women leather bag</a
+                    >
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Vero, possimus nostrum!
+                  </p>
+                  <div class="product-bottom-details">
+                    <div class="product-price">$230.99</div>
+                    <div class="product-links">
+                      <a href=""><i class="fa fa-heart"></i></a>
+                      <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="proBox">
+              <div class="product-card">
+                <div class="product-tumb">
+                  <a href="singleProduct.html" target="_blank"
+                    ><img src="images/salad2.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="product-details">
+                  <span class="product-catagory">Women,bag</span>
+                  <h4>
+                    <a href="singleProduct.css" target="_blank"
+                      >Women leather bag</a
+                    >
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Vero, possimus nostrum!
+                  </p>
+                  <div class="product-bottom-details">
+                    <div class="product-price">$230.99</div>
+                    <div class="product-links">
+                      <a href=""><i class="fa fa-heart"></i></a>
+                      <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="proBox">
+              <div class="product-card">
+                <div class="product-tumb">
+                  <a href="singleProduct.html" target="_blank"
+                    ><img src="images/salad8.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="product-details">
+                  <span class="product-catagory">Women,bag</span>
+                  <h4>
+                    <a href="singleProduct.html" target="_blank"
+                      >Women leather bag</a
+                    >
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Vero, possimus nostrum!
+                  </p>
+                  <div class="product-bottom-details">
+                    <div class="product-price">$230.99</div>
+                    <div class="product-links">
+                      <a href=""><i class="fa fa-heart"></i></a>
+                      <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="proBox">
+              <div class="product-card">
+                <div class="product-tumb">
+                  <a href="singleProduct.html" target="_blank"
+                    ><img src="images/salad14.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="product-details">
+                  <span class="product-catagory">Women,bag</span>
+                  <h4>
+                    <a href="singleProduct.html" target="_blank"
+                      >Women leather bag</a
+                    >
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Vero, possimus nostrum!
+                  </p>
+                  <div class="product-bottom-details">
+                    <div class="product-price">$230.99</div>
+                    <div class="product-links">
+                      <a href=""><i class="fa fa-heart"></i></a>
+                      <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END shop -->
+
+    <!-- SATRT Fouter -->
+    <section
+      class="footerSec"
+      style="background-image: url('images/footerbg1.png')"
+    >
+      <div class="container">
+        <div class="footer">
+          <div class="footerCard">
+            <h3>About Us</h3>
+            <ul>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Faq</a></li>
+              <li><a href="#">New & Events</a></li>
+            </ul>
+          </div>
+
+          <div class="footerCard">
+            <h3>Helpful Links</h3>
+            <ul>
+              <li><a href="#">Terms Of Use </a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">account details</a></li>
+            </ul>
+          </div>
+
+          <div class="footerCard">
+            <h3>Doing Business</h3>
+            <ul>
+              <li><a href="#">Be a Supplier</a></li>
+              <li><a href="#">Be a Partner</a></li>
+              <li><a href="#">Franchise</a></li>
+              <li><a href="#">Invest With Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footerCard">
+            <h3>Connect With Us</h3>
+            <ul>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Linkdein</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Fouter -->
+
+    <!-- START CopyWrite -->
+    <section class="copyFooter">
+      <div class="container">
+        <div class="copyWrite">
+          <div>
+            <a href="#home" class="site-logo"><span>Super</span>Salad</a>
+          </div>
+          <p id="ccright"></p>
+          <div>
+            <script>
+              document.getElementById("ccright").innerHTML =
+                "Copyright &copy; " +
+                new Date().getFullYear() +
+                " - All Rights Reserved";
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END CopyWrite -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

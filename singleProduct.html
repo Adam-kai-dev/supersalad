@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SuperSalad</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/saladFavicon.png" />
+
+    <!-- Blog Style -->
+    <link rel="stylesheet" href="singleProduct.css" />
+
+    <!-- Home Page Style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font-Awsome -->
+    <!-- <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        /> -->
+
+    <!-- Font-Awsome -->
+    <script
+      src="https://kit.fontawesome.com/0360d28893.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- START Header Section -->
+    <header class="header-area">
+      <!-- START navbar -->
+      <div class="navbar-area">
+        <div class="container">
+          <nav class="site-navbar">
+            <!-- Logo -->
+            <!-- <a href="#home" class="site-logo">logo</a> -->
+            <a href="#home" class="site-logo"><span>Super</span>Salad</a>
+
+            <!-- Menu -->
+            <ul>
+              <li><a href="index.html">home</a></li>
+              <li><a href="myBlog.html">Blog</a></li>
+              <li><a href="about.html">about</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="contact.html">contact</a></li>
+            </ul>
+
+            <!-- nav-toggler for mobile version only -->
+            <button class="nav-toggler">
+              <span></span>
+            </button>
+          </nav>
+        </div>
+      </div>
+      <!-- END navbar -->
+    </header>
+    <!-- END Header Section -->
+
+    <section class="container">
+      <div class="singlePrduct">
+        <div id="singleImages">
+          <div id="featured_img">
+            <img id="img" src="images/salad5.jpg" />
+          </div>
+          <div id="thumb_img" class="cf">
+            <img
+              class="active"
+              src="images/salad5.jpg"
+              onmouseover="changeimg('images/salad5.jpg',this);"
+            />
+            <img
+              src="images/salad2.jpg"
+              onmouseover="changeimg('images/salad2.jpg',this);"
+            />
+            <img
+              src="images/salad3.jpg"
+              onmouseover="changeimg('images/salad3.jpg',this);"
+            />
+          </div>
+        </div>
+
+        <div class="singleProInfo">
+          <h4>Salad Category</h4>
+          <h2>You can add here your product title</h2>
+          <p class="shorProDesc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi
+            dolorum nulla dolores perferendis distinctio, cupiditate
+            necessitatibus quae at harum.
+          </p>
+          <p class="singleProPrice">$20</p>
+
+          <div class="addToCart">
+            <div class="counter">
+              <span class="down" onClick="decreaseCount(event, this)">-</span>
+              <input type="text" value="1" />
+              <span class="up" onClick="increaseCount(event, this)">+</span>
+            </div>
+            <div>
+              <button class="btn" style="border-radius: 7px">
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <!-- <hr />
+          <div class="stockInfo">
+            <div>Avai</div>
+            <span>:</span>
+            <div>In Stock</div>
+          </div>
+          <div class="stockInfo">
+            <div>Available</div>
+            <span>:</span>
+            <div>In Stock</div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- START CopyWrite -->
+    <section class="copyFooter">
+      <div class="container">
+        <div class="copyWrite">
+          <div>
+            <a href="#home" class="site-logo"><span>Super</span>Salad</a>
+          </div>
+          <p id="ccright"></p>
+          <div>
+            <script>
+              document.getElementById("ccright").innerHTML =
+                "Copyright &copy; " +
+                new Date().getFullYear() +
+                " - All Rights Reserved";
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END CopyWrite -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

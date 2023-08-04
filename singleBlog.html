@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SuperSalad</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/saladFavicon.png" />
+
+    <!-- Blog Style -->
+    <link rel="stylesheet" href="singleBlog.css" />
+
+    <!-- Home Page Style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font-Awsome -->
+    <!-- <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        /> -->
+
+    <!-- Font-Awsome -->
+    <script
+      src="https://kit.fontawesome.com/0360d28893.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- START Header Section -->
+    <header class="header-area">
+      <!-- START navbar -->
+      <div class="navbar-area">
+        <div class="container">
+          <nav class="site-navbar">
+            <!-- Logo -->
+            <!-- <a href="#home" class="site-logo">logo</a> -->
+            <a href="#home" class="site-logo"><span>Super</span>Salad</a>
+
+            <!-- Menu -->
+            <ul>
+              <li><a href="index.html">home</a></li>
+              <li><a href="myBlog.html">Blog</a></li>
+              <li><a href="about.html">about</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="contact.html">contact</a></li>
+            </ul>
+
+            <!-- nav-toggler for mobile version only -->
+            <button class="nav-toggler">
+              <span></span>
+            </button>
+          </nav>
+        </div>
+      </div>
+      <!-- END navbar -->
+    </header>
+    <!-- END Header Section -->
+
+    <!-- START Blog Section -->
+
+    <section class="container">
+      <div class="singleBlogSec">
+        <!-- Single Bloge Content -->
+        <div class="singleContent">
+          <div class="singleBox">
+            <img src="images/salad8.jpg" alt="" />
+            <div class="singleInfo">
+              <h3>Here you can add your blog title</h3>
+              <p class="writer">
+                Posted On <span>Jul 14, 2023</span> By <span>admin</span>
+              </p>
+              <p class="fullContent">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
+                omnis recusandae cupiditate consequatur reiciendis cumque
+                facilis voluptatum, beatae, asperiores, tenetur maxime
+                voluptates. Labore deserunt quibusdam dolor officiis nemo
+                delectus eos magni accusamus dolore velit alias id assumenda
+                illum voluptas, laudantium earum maxime vero eligendi. Fugit,
+                sit nemo totam ullam dolor dolorem quaerat repudiandae harum
+                recusandae sint ea excepturi soluta! Ratione nobis omnis
+                suscipit laudantium. Nam quisquam aperiam, voluptas placeat
+                quibusdam quis error quia est, animi asperiores corporis nemo
+                similique.
+              </p>
+              <p class="fullContent">
+                Sapiente a veritatis provident perspiciatis. Accusamus tenetur
+                vitae eaque cum, rerum voluptatum voluptas, cumque libero quo
+                vero illo, deleniti quidem dolorum placeat alias quos eius
+                perspiciatis? Ut, voluptates. Minima ad autem ut rerum odit
+                doloribus neque, deserunt dolore! Ad suscipit ea sapiente
+                perspiciatis minima libero omnis asperiores, blanditiis odit
+                esse sunt quidem. Temporibus tenetur repudiandae qui impedit
+                voluptas eos, pariatur aspernatur explicabo eveniet magnam. Quod
+                iusto temporibus autem illum tempora incidunt illo neque quas
+                animi magni repudiandae inventore quibusdam odit, optio alias
+                provident quisquam cum officia tenetur perspiciatis iure
+                voluptatem, magnam doloribus? Asperiores neque laborum accusamus
+                voluptatem ex error eligendi rerum ratione repellat delectus
+                consequatur quia recusandae inventore soluta alias enim earum,
+                corrupti laboriosam dignissimos at odio nam nisi. Eveniet,
+                neque.
+              </p>
+              <p class="fullContent">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
+                omnis recusandae cupiditate consequatur reiciendis cumque
+                facilis voluptatum, beatae, asperiores, tenetur maxime
+                voluptates. Labore deserunt quibusdam dolor officiis nemo
+                delectus eos magni accusamus dolore velit alias id assumenda
+                illum voluptas, laudantium earum maxime vero eligendi. Fugit,
+                sit nemo totam ullam dolor dolorem quaerat repudiandae harum
+                recusandae sint ea excepturi soluta! Ratione nobis omnis
+                suscipit laudantium. Nam quisquam aperiam, voluptas placeat
+                quibusdam quis error quia est, animi asperiores corporis nemo
+                similique.
+              </p>
+            </div>
+          </div>
+          <!-- LeaveComment -->
+          <div class="sp-comment">
+            <h2 class="comment-title">Leave Comment</h2>
+            <div class="comment-card">
+              <form action="">
+                <div class="comment-input">
+                  <div class="c-name">
+                    <input type="text" placeholder="Name" />
+                  </div>
+                  <div class="c-email">
+                    <input type="email" placeholder="Email" />
+                  </div>
+                </div>
+                <textarea type="text" placeholder="textarea"></textarea>
+              </form>
+            </div>
+          </div>
+
+          <!-- Next-And-Old -->
+          <div class="newPost">
+            <div class="oldPost">
+              <button class="btn">
+                <i class="fa-solid fa-chevron-left fa-sm"></i>
+                Old Post
+              </button>
+            </div>
+            <div class="nextPost">
+              <button class="btn">
+                Next Post <i class="fa-solid fa-chevron-right fa-sm"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Start Sidebar -->
+        <div class="singleBlgSideBar">
+          <!-- Search form -->
+          <div class="">
+            <div class="blg-sidebar-srch">
+              <div class="search">
+                <input type="text" class="searchTerm" placeholder="Search" />
+                <button type="submit" class="searchButton">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- categories Sidebar -->
+          <div class="categories">
+            <h2>Categories</h2>
+            <div class="sideBarCategory">
+              <a href="#">Tossed salad</a>
+              <span>129</span>
+            </div>
+            <div class="sideBarCategory">
+              <a href="#">Bound salad</a>
+              <span>78</span>
+            </div>
+            <div class="sideBarCategory">
+              <a href="#">Tossed salad</a>
+              <span>129</span>
+            </div>
+            <div class="sideBarCategory">
+              <a href="#">Fruit salad</a>
+              <span>12</span>
+            </div>
+            <div class="sideBarCategory">
+              <a href="#">Noodle salad</a>
+              <span>89</span>
+            </div>
+            <div class="sideBarCategory">
+              <a href="#">Pasta salad</a>
+              <span>30</span>
+            </div>
+          </div>
+          <!-- Contact sidebar -->
+          <div class="talk">
+            <h2>Let's Talk</h2>
+            <p>
+              Do you want to learn more about how I can help your company
+              overcome problemes? Let us have a conversation.
+            </p>
+            <!--  -->
+            <div class="social-media">
+              <a href="#" class="talkIcon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="talkIcon"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="talkIcon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="talkIcon"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <!--  -->
+          </div>
+        </div>
+        <!-- End SideBar -->
+      </div>
+    </section>
+
+    <!-- END Blog Section -->
+
+    <!-- SATRT Fouter -->
+    <section
+      class="footerSec"
+      style="background-image: url('images/footerbg1.png')"
+    >
+      <div class="container">
+        <div class="footer">
+          <div class="footerCard">
+            <h3>About Us</h3>
+            <ul>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Faq</a></li>
+              <li><a href="#">New & Events</a></li>
+            </ul>
+          </div>
+
+          <div class="footerCard">
+            <h3>Helpful Links</h3>
+            <ul>
+              <li><a href="#">Terms Of Use </a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">account details</a></li>
+            </ul>
+          </div>
+
+          <div class="footerCard">
+            <h3>Doing Business</h3>
+            <ul>
+              <li><a href="#">Be a Supplier</a></li>
+              <li><a href="#">Be a Partner</a></li>
+              <li><a href="#">Franchise</a></li>
+              <li><a href="#">Invest With Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footerCard">
+            <h3>Connect With Us</h3>
+            <ul>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Linkdein</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Fouter -->
+
+    <!-- START CopyWrite -->
+    <section class="copyFooter">
+      <div class="container">
+        <div class="copyWrite">
+          <div>
+            <a href="#home" class="site-logo"><span>Super</span>Salad</a>
+          </div>
+          <p id="ccright"></p>
+          <div>
+            <script>
+              document.getElementById("ccright").innerHTML =
+                "Copyright &copy; " +
+                new Date().getFullYear() +
+                " - All Rights Reserved";
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END CopyWrite -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+:root {
+  --grey: #f2f1f6;
+  --pink: #fb4374;
+  --white: #ffffff;
+  --titleClr: #21435d;
+  --pragraphClr: #c0c5c8;
+  --paraClr: #343a40;
+  --shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --borderClr: antiquewhite;
+}
+
+.singlePrduct {
+  margin-top: 100px;
+  margin: 100px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+
+/* singleImages */
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  zoom: 1;
+}
+#singleImages {
+  max-width: 650px;
+  /* margin: 3rem auto; */
+  text-align: center;
+}
+#featured_img img,
+#thumb_img img {
+  max-width: 100%;
+  border-radius: 19px;
+}
+#thumb_img {
+  margin-top: 2%;
+}
+#thumb_img img {
+  float: left;
+  max-width: 32%;
+  width: 32%;
+  cursor: pointer;
+  margin-right: 2%;
+  border: 2px solid #eee;
+  box-sizing: border-box;
+}
+#thumb_img img.active {
+  border: 2px solid #cac6b8;
+}
+#thumb_img img:last-child {
+  margin-right: 0;
+}
+
+/* singleProInfo */
+/* Quantity */
+.counter {
+  width: 163.5px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--pink);
+  margin-bottom: 20px;
+  margin-right: 40px;
+  border-radius: 7px;
+}
+.counter input {
+  width: 50px;
+  border: 0;
+  line-height: 30px;
+  font-size: 20px;
+  text-align: center;
+  background: var(--pink);
+  color: var(--titleClr);
+  appearance: none;
+  outline: 0;
+}
+.counter span {
+  color: #fff;
+  display: block;
+  font-size: 25px;
+  padding: 0 10px;
+  cursor: pointer;
+  user-select: none;
+}
+.addToCart {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.sp-btn {
+  margin-left: 30px;
+}
+
+.singleProInfo h4 {
+  color: var(--pink);
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.singleProInfo h2 {
+  color: var(--titleClr);
+  font-size: 32px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.shorProDesc {
+  color: var(--paraClr);
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.singleProPrice {
+  color: var(--titleClr);
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 992px) {
+  .singlePrduct {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* .singleProInfo hr {
+  margin-top: 20px;
+}
+
+.stockInfo {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+} */

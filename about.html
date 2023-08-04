@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SuperSalad</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/saladFavicon.png" />
+
+    <!-- Blog Style -->
+    <link rel="stylesheet" href="about.css" />
+
+    <!-- Home Page Style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font-Awsome -->
+    <!-- <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        /> -->
+
+    <!-- Font-Awsome -->
+    <script
+      src="https://kit.fontawesome.com/0360d28893.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- START Header Section -->
+    <header class="header-area">
+      <!-- START navbar -->
+      <div class="navbar-area">
+        <div class="container">
+          <nav class="site-navbar">
+            <!-- Logo -->
+            <!-- <a href="#home" class="site-logo">logo</a> -->
+            <a href="#home" class="site-logo"><span>Super</span>Salad</a>
+
+            <!-- Menu -->
+            <ul>
+              <li><a href="index.html">home</a></li>
+              <li><a href="myBlog.html">Blog</a></li>
+              <li><a href="about.html">about</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="contact.html">contact</a></li>
+            </ul>
+
+            <!-- nav-toggler for mobile version only -->
+            <button class="nav-toggler">
+              <span></span>
+            </button>
+          </nav>
+        </div>
+      </div>
+      <!-- END navbar -->
+    </header>
+    <!-- END Header Section -->
+
+    <section class="container">
+      <div>
+        <div class="about">
+          <h2>We're changing the</h2>
+          <h2>whole game</h2>
+        </div>
+        <div class="aboutUs">
+          <div class="ourMission">
+            <h2>About Us</h2>
+            <p>
+              At SuperSalad, our mission is to inspire and promote a healthier
+              lifestyle by providing a delightful and innovative salad
+              experience for all. We believe that food can be both nourishing
+              and enjoyable, and salads represent a perfect harmony of taste,
+              nutrition, and convenience.
+            </p>
+            <p>
+              Our primary goal is to make salads accessible and exciting for
+              everyone, from seasoned salad enthusiasts to those new to the
+              world of greens and veggies. Through our website, we aim to be the
+              go-to destination for salad lovers, offering a wide range of
+              fresh, flavorful, and customizable salads that cater to diverse
+              tastes and dietary preferences.
+            </p>
+            <p>
+              Beyond just salads, In SuperSalad we provide valuable resources,
+              including educational content, cooking tips, and nutritional
+              insights, to empower our customers to make informed choices and
+              take charge of their well-being.
+            </p>
+            <p>
+              SuperSalad is more than just a website; it's a celebration of
+              wellness, flavor, and mindful eating. We envision a world where
+              salads become a joyful and staple part of everyone's daily
+              routine, making a significant impact on personal health and the
+              planet.
+            </p>
+            <!-- <p>
+            Join us on this salad journey as we bring deliciousness and vitality
+            to your plate. Together, let's savor the goodness of nature and
+            embrace a healthier, happier life.
+          </p> -->
+          </div>
+          <div class="aboutUsContainer">
+            <video
+              class="responsive-iframe"
+              controls
+              id="video"
+              preload="metadata"
+              poster="//cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/poster.jpg"
+            >
+              <source
+                src="//cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <div class="play-button-wrapper">
+              <div title="Play video" class="play-gif" id="circle-play-b">
+                <img src="images/play-button.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SATRT Fouter -->
+    <section
+      class="footerSec"
+      style="background-image: url('images/footerbg1.png')"
+    >
+      <div class="container">
+        <div class="footer">
+          <div class="footerCard">
+            <h3>About Us</h3>
+            <ul>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Faq</a></li>
+              <li><a href="#">New & Events</a></li>
+            </ul>
+          </div>
+
+          <div class="footerCard">
+            <h3>Helpful Links</h3>
+            <ul>
+              <li><a href="#">Terms Of Use </a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">account details</a></li>
+            </ul>
+          </div>
+
+          <div class="footerCard">
+            <h3>Doing Business</h3>
+            <ul>
+              <li><a href="#">Be a Supplier</a></li>
+              <li><a href="#">Be a Partner</a></li>
+              <li><a href="#">Franchise</a></li>
+              <li><a href="#">Invest With Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footerCard">
+            <h3>Connect With Us</h3>
+            <ul>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Linkdein</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Fouter -->
+
+    <!-- START CopyWrite -->
+    <section class="copyFooter">
+      <div class="container">
+        <div class="copyWrite">
+          <div>
+            <a href="#home" class="site-logo"><span>Super</span>Salad</a>
+          </div>
+          <p id="ccright"></p>
+          <div>
+            <script>
+              document.getElementById("ccright").innerHTML =
+                "Copyright &copy; " +
+                new Date().getFullYear() +
+                " - All Rights Reserved";
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END CopyWrite -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
